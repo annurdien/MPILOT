@@ -64,7 +64,7 @@ WindowsBuild {
 QGC_APP_NAME        = "MPilot"
 QGC_ORG_NAME        = "Inderaja Teknik"
 QGC_ORG_DOMAIN      = "org.inderajateknik"
-QGC_APP_DESCRIPTION = "Open source ground control app provided by MPilot dev team"
+QGC_APP_DESCRIPTION = "Open source MPilot app provided by MPilot dev team"
 QGC_APP_COPYRIGHT   = "Copyright (C) 2019 MPilot Development Team. All rights reserved."
 
 WindowsBuild {
@@ -351,9 +351,9 @@ CustomBuild {
         RESOURCES += $$PWD/qgcimages.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"QGroundControl\\\"\"
-    DEFINES += QGC_ORG_NAME=\"\\\"QGroundControl.org\\\"\"
-    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.qgroundcontrol\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"Mpilot\\\"\"
+    DEFINES += QGC_ORG_NAME=\"\\\"InderajaTeknik\\\"\"
+    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.InderajaTeknik\\\"\"
     RESOURCES += \
         $$PWD/qgroundcontrol.qrc \
         $$PWD/qgcresources.qrc \

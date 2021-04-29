@@ -70,7 +70,7 @@ Item {
             RowLayout {
                 id:                 buttonRow
                 Layout.fillHeight:  true
-                spacing:            0
+                spacing:            1
 
                 function clearAllChecks() {
                     for (var i=0; i<buttonRow.children.length; i++) {
@@ -94,7 +94,15 @@ Item {
                         checked = true
                         mainWindow.showSettingsView()
                     }
+                }
 
+                // Separator
+                Rectangle {
+                    Layout.margins:     1
+                    Layout.fillHeight:  true
+                    width:              1
+                    color:              qgcPal.text
+                    visible:            ture
                 }
 
                 QGCToolBarButton {
@@ -109,7 +117,17 @@ Item {
                         checked = true
                         mainWindow.showSetupView()
                     }
+                    text:               qsTr("Settings")
 
+                }
+
+                // Separator
+                Rectangle {
+                    Layout.margins:     1
+                    Layout.fillHeight:  true
+                    width:              1
+                    color:              qgcPal.text
+                    visible:            true
                 }
 
                 QGCToolBarButton {
@@ -124,6 +142,16 @@ Item {
                         checked = true
                         mainWindow.showPlanView()
                     }
+                    text:               qsTr("Flight Plan")
+                }
+
+                // Separator
+                Rectangle {
+                    Layout.margins:     1
+                    Layout.fillHeight:  true
+                    width:              1
+                    color:              qgcPal.text
+                    visible:            true
                 }
 
                 QGCToolBarButton {
@@ -171,6 +199,16 @@ Item {
                             advancedModeConfirmation.close()
                         }
                     }
+                    text:               qsTr("Fly")
+                }
+
+           // Separator
+                Rectangle {
+                    Layout.margins:     1
+                    Layout.fillHeight:  true
+                    width:              1
+                    color:              qgcPal.text
+                    visible:            true
                 }
 
                 QGCToolBarButton {
@@ -186,6 +224,8 @@ Item {
                         checked = true
                         mainWindow.showAnalyzeView()
                     }
+                    text:               qsTr("Geotagging")
+
                 }
 
                 Item {
@@ -193,9 +233,9 @@ Item {
                     width:              ScreenTools.defaultFontPixelWidth / 2
                     visible:            activeVehicle
                 }
-
+// Separator
                 Rectangle {
-                    Layout.margins:     ScreenTools.defaultFontPixelHeight / 2
+                    Layout.margins:     1
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
