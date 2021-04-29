@@ -94,6 +94,7 @@ Item {
                         checked = true
                         mainWindow.showSettingsView()
                     }
+
                 }
 
                 QGCToolBarButton {
@@ -108,6 +109,7 @@ Item {
                         checked = true
                         mainWindow.showSetupView()
                     }
+
                 }
 
                 QGCToolBarButton {
