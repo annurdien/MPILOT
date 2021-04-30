@@ -32,7 +32,8 @@ Button {
 
     background: Rectangle {
         anchors.fill: parent
-        color:  logo ? qgcPal.brandingPurple : (button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0))
+//        color:  logo ? qgcPal.brandingPurple : (button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0))
+        color:  button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0)
     }
 
     contentItem: Row {

@@ -94,6 +94,7 @@ Item {
                         checked = true
                         mainWindow.showSettingsView()
                     }
+                    text:               qsTr("Menu")
                 }
 
                 // Separator
@@ -117,7 +118,7 @@ Item {
                         checked = true
                         mainWindow.showSetupView()
                     }
-                    text:               qsTr("Settings")
+                    text:               qsTr("Aircraft Setup")
 
                 }
 
@@ -239,7 +240,7 @@ Item {
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
-                    visible:            activeVehicle
+                    visible:            true
                 }
 
                 Item {
