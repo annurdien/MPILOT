@@ -102,7 +102,7 @@ Item {
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
-                    visible:            ture
+                    visible:            true
                 }
 
                 QGCToolBarButton {
