@@ -199,7 +199,7 @@ Item {
                             advancedModeConfirmation.close()
                         }
                     }
-                    text:               qsTr("Fly")
+                    text:               qsTr("Flight")
                 }
 
            // Separator

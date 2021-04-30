@@ -193,7 +193,7 @@ Item {
             QGCLabel { text: qsTr("Max Range:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _missionMaxTelemetryText
-                font.pointSize:         _dataFontSize
+                font.pointSize:         _dataFontSizeT
                 Layout.minimumWidth:    _largeValueWidth
             }
 
