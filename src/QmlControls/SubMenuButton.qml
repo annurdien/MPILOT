@@ -49,7 +49,8 @@ Button {
                 height:                 ScreenTools.defaultFontPixelHeight * 2
                 fillMode:               Image.PreserveAspectFit
                 mipmap:                 true
-                color:                  control.setupComplete ? qgcPal.button : "red"
+//                color:                  control.setupComplete ? qgcPal.button : "red"
+                color:                  control.setupComplete ? "white" : "red"
                 source:                 control.imageResource
                 sourceSize:             _rootButton.sourceSize
             }

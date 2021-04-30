@@ -48,7 +48,7 @@ Column {
             Item { Layout.fillWidth: true }
             QGCLabel {
                 Layout.preferredWidth:  _root._fieldWidth
-                text:                   qsTr("Front Lap")
+                text:                   qsTr("End Lap")
             }
             QGCLabel {
                 Layout.preferredWidth:  _root._fieldWidth
@@ -60,7 +60,7 @@ Column {
             anchors.left:   parent.left
             anchors.right:  parent.right
             spacing:        _margin
-            QGCLabel { text: qsTr("Overlap"); Layout.fillWidth: true }
+            QGCLabel { text: qsTr(""); Layout.fillWidth: true }
             FactTextField {
                 Layout.preferredWidth:  _root._fieldWidth
                 fact:                   cameraCalc.frontalOverlap
@@ -73,7 +73,7 @@ Column {
 
         QGCLabel {
             wrapMode:               Text.WordWrap
-            text:                   qsTr("Select one:")
+            text:                   qsTr("")
             Layout.preferredWidth:  parent.width
             Layout.columnSpan:      2
         }
@@ -101,7 +101,7 @@ Column {
 
             QGCRadioButton {
                 id:                     fixedImageDensityRadio
-                text:                   qsTr("Ground Res")
+                text:                   qsTr("Resolution")
                 checked:                !cameraCalc.valueSetIsDistance.value
                 onClicked:              cameraCalc.valueSetIsDistance.value = 0
             }

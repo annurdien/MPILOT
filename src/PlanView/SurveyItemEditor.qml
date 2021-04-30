@@ -220,7 +220,7 @@ Rectangle {
                     id:             transectsHeader
                     anchors.left:   parent.left
                     anchors.right:  parent.right
-                    text:           qsTr("Transects")
+                    text:           qsTr("Grid Settings")
                 }
 
                 GridLayout {
@@ -253,7 +253,7 @@ Rectangle {
                     }
 
                     QGCLabel {
-                        text:       qsTr("Turnaround dist")
+                        text:       qsTr("Overshoot")
                     }
                     FactTextField {
                         fact:               missionItem.turnAroundDistance
@@ -380,7 +380,7 @@ Rectangle {
                     id:             statsHeader
                     anchors.left:   parent.left
                     anchors.right:  parent.right
-                    text:           qsTr("Statistics")
+                    text:           qsTr("Survey information")
                 }
 
                 TransectStyleComplexItemStats {
