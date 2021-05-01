@@ -229,11 +229,11 @@ Item {
 
                 }
 
-                Item {
-                    Layout.fillHeight:  true
-                    width:              ScreenTools.defaultFontPixelWidth / 2
-                    visible:            activeVehicle
-                }
+//                Item {
+//                    Layout.fillHeight:  true
+//                    width:              ScreenTools.defaultFontPixelWidth / 2
+//                    visible:            activeVehicle
+//                }
 // Separator
                 Rectangle {
                     Layout.margins:     0
