@@ -570,16 +570,16 @@ Item {
             anchors.top:        parent.top
             z:                  QGroundControl.zOrderWidgets
             maxHeight:          parent.height - toolStrip.y
-            title:              qsTr("Plan")
+            title:              qsTr("Flight Plan")
 
-            //readonly property int flyButtonIndex:       0
+            //readonly property int flyButtonIndex:     0
             readonly property int fileButtonIndex:      0
             readonly property int takeoffButtonIndex:   1
             readonly property int waypointButtonIndex:  2
-            readonly property int roiButtonIndex:       3
-            readonly property int patternButtonIndex:   4
-            readonly property int landButtonIndex:      5
-            readonly property int centerButtonIndex:    6
+            //readonly property int roiButtonIndex:     3
+            readonly property int patternButtonIndex:   3
+            readonly property int landButtonIndex:      4
+            readonly property int centerButtonIndex:    5
 
             property bool _isRallyLayer:    _editingLayer == _layerRallyPoints
             property bool _isMissionLayer:  _editingLayer == _layerMission
@@ -592,7 +592,7 @@ Item {
                     buttonVisible:      true,
                 },*/
                 {
-                    name:               qsTr("File"),
+                    name:               qsTr("Mission"),
                     iconSource:         "/qmlimages/MapSync.svg",
                     buttonEnabled:      !_planMasterController.syncInProgress,
                     buttonVisible:      true,
@@ -614,15 +614,15 @@ Item {
                     toggle:             true,
                     checked:            _addWaypointOnClick
                 },
-                {
+                /*{
                     name:               _missionController.isROIActive ? qsTr("Cancel ROI") : qsTr("ROI"),
                     iconSource:         "/qmlimages/MapAddMission.svg",
                     buttonEnabled:      !_missionController.onlyInsertTakeoffValid,
                     buttonVisible:      _isMissionLayer && _planMasterController.controllerVehicle.roiModeSupported,
                     toggle:             !_missionController.isROIActive
-                },
+                },*/
                 {
-                    name:               _singleComplexItem ? _missionController.complexMissionItemNames[0] : qsTr("Pattern"),
+                    name:               _singleComplexItem ? _missionController.complexMissionItemNames[0] : qsTr("Grid"),
                     iconSource:         "/qmlimages/MapDrawShape.svg",
                     buttonEnabled:      _missionController.flyThroughCommandsAllowed,
                     buttonVisible:      _isMissionLayer,
@@ -666,7 +666,7 @@ Item {
                         _addWaypointOnClick = checked
                     }
                     break
-                case roiButtonIndex:
+                /*case roiButtonIndex:
                     if (_addROIOnClick) {
                         allAddClickBoolsOff()
                         setChecked(index, false)
@@ -678,7 +678,7 @@ Item {
                             _addROIOnClick = checked
                         }
                     }
-                    break
+                    break*/
                 case patternButtonIndex:
                     allAddClickBoolsOff()
                     if (_singleComplexItem) {
