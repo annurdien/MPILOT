@@ -45,7 +45,8 @@ Button {
             width:                  height
             sourceSize.height:      parent.height
             fillMode:               Image.PreserveAspectFit
-            color:                  logo ? "white" : (button.checked ? qgcPal.buttonHighlightText : qgcPal.buttonText)
+//            color:                  logo ? "white" : (button.checked ? qgcPal.buttonHighlightText : qgcPal.buttonText)
+            color:                  button.checked ? qgcPal.buttonHighlightText : qgcPal.buttonText
             source:                 button.icon.source
             anchors.verticalCenter: parent.verticalCenter
         }

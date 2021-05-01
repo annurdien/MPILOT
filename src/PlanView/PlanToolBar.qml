@@ -28,35 +28,35 @@ Rectangle {
         anchors.rightMargin:    ScreenTools.defaultFontPixelWidth / 2
         anchors.fill:           parent
         spacing:                ScreenTools.defaultFontPixelWidth * 2
-       //Separator
-        Rectangle {
-            Layout.margins:     1
-            Layout.fillHeight:  true
-            width:              1
-            color:              qgcPal.text
-            visible:            true
-        }
+//       //Separator
+//        Rectangle {
+//            Layout.margins:     1
+//            Layout.fillHeight:  true
+//            width:              1
+//            color:              qgcPal.text
+//            visible:            true
+//        }
         //Plane Icon Button
         QGCToolBarButton {
             id:                 settingsButton
             Layout.fillHeight:  true
             icon.source:        "/qmlimages/PaperPlane.svg"
             logo:               true
-            checked:            false
+            checked:            true
             onClicked: {
                 checked = false
                 mainWindow.showFlyView()
             }
             text:               qsTr("Flight")
         }
-        //Separator
-        Rectangle {
-            Layout.margins:     1
-            Layout.fillHeight:  true
-            width:              1
-            color:              qgcPal.text
-            visible:            true
-        }
+//        //Separator
+//        Rectangle {
+//            Layout.margins:     1
+//            Layout.fillHeight:  true
+//            width:              1
+//            color:              qgcPal.text
+//            visible:            true
+//        }
         //Indicator
         Loader {
             source:             "PlanToolBarIndicators.qml"

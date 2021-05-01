@@ -99,7 +99,7 @@ Item {
 
                 // Separator
                 Rectangle {
-                    Layout.margins:     1
+                    Layout.margins:     0
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
@@ -124,7 +124,7 @@ Item {
 
                 // Separator
                 Rectangle {
-                    Layout.margins:     1
+                    Layout.margins:     0
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
@@ -148,7 +148,7 @@ Item {
 
                 // Separator
                 Rectangle {
-                    Layout.margins:     1
+                    Layout.margins:     0
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
@@ -205,7 +205,7 @@ Item {
 
            // Separator
                 Rectangle {
-                    Layout.margins:     1
+                    Layout.margins:     0
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
@@ -236,7 +236,7 @@ Item {
                 }
 // Separator
                 Rectangle {
-                    Layout.margins:     1
+                    Layout.margins:     0
                     Layout.fillHeight:  true
                     width:              1
                     color:              qgcPal.text
