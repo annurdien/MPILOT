@@ -85,7 +85,7 @@ Rectangle {
             QGCLabel {
                 anchors.left:           parent.left
                 anchors.right:          parent.right
-                text:                   qsTr("Analyze")
+                text:                   qsTr("Geotagging")
                 wrapMode:               Text.WordWrap
                 horizontalAlignment:    Text.AlignHCenter
                 visible:                !ScreenTools.isShortScreen
