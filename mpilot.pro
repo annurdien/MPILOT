@@ -62,13 +62,13 @@ WindowsBuild {
 #
 
 QGC_APP_NAME        = "MPilot"
-QGC_ORG_NAME        = "Inderaja Teknik"
+QGC_ORG_NAME        = "InderajaTeknik"
 QGC_ORG_DOMAIN      = "org.inderajateknik"
 QGC_APP_DESCRIPTION = "Open source MPilot app provided by MPilot dev team"
 QGC_APP_COPYRIGHT   = "Copyright (C) 2019 MPilot Development Team. All rights reserved."
 
 WindowsBuild {
-    QGC_INSTALLER_ICON          = "WindowsQGC.ico"
+    QGC_INSTALLER_ICON          = "WindowsMpilot.ico"
     QGC_INSTALLER_HEADER_BITMAP = "installheader.bmp"
 }
 
