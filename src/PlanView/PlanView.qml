@@ -566,11 +566,11 @@ Item {
         ToolStrip {
             id:                 toolStrip
             anchors.margins:    _toolsMargin
-            anchors.left:       parent.left
+//            anchors.left:       parent.left
             anchors.top:        parent.top
             z:                  QGroundControl.zOrderWidgets
             maxHeight:          parent.height - toolStrip.y
-            title:              qsTr("Flight Plan")
+            //title:              qsTr("Flight Plan")
 
             //readonly property int flyButtonIndex:     0
             readonly property int fileButtonIndex:      0
