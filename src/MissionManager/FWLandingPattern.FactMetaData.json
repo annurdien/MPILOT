@@ -6,7 +6,7 @@
     "units":            "m",
     "min":              10,
     "decimalPlaces":    1,
-    "defaultValue":     300.0
+    "defaultValue":     100.0
 },
 {
     "name":             "LandingHeading",
@@ -24,7 +24,7 @@
     "type":             "double",
     "units":            "m",
     "decimalPlaces":    1,
-    "defaultValue":     40.0
+    "defaultValue":     35.0
 },
 {
     "name":             "LoiterRadius",
@@ -33,7 +33,7 @@
     "decimalPlaces":    1,
     "min":              1,
     "units":            "m",
-    "defaultValue":     75.0
+    "defaultValue":     12.0
 },
 {
     "name":             "LandingAltitude",
@@ -51,7 +51,7 @@
     "min":              0.1,
     "max":              90,
     "decimalPlaces":    1,
-    "defaultValue":     6.0
+    "defaultValue":     19.3
 },
 {
     "name":             "ValueSetIsDistance",
