@@ -20,7 +20,8 @@ Rectangle {
     color:      qgcPal.globalTheme === QGCPalette.Light ? QGroundControl.corePlugin.options.toolbarBackgroundLight : QGroundControl.corePlugin.options.toolbarBackgroundDark
     width:      _idealWidth < repeater.contentWidth ? repeater.contentWidth : _idealWidth
     height:     Math.min(maxHeight, toolStripColumn.height + (flickable.anchors.margins * 2))
-    radius:     ScreenTools.defaultFontPixelWidth / 2
+//    radius:     ScreenTools.defaultFontPixelWidth / 2
+    radius:     ScreenTools.defaultFontPixelWidth - ScreenTools.defaultFontPixelWidth
 
     property alias  model:              repeater.model
     property real   maxHeight           ///< Maximum height for control, determines whether text is hidden to make control shorter
@@ -93,7 +94,8 @@ Rectangle {
                     anchors.left:   toolStripColumn.left
                     anchors.right:  toolStripColumn.right
                     height:         width
-                    radius:         ScreenTools.defaultFontPixelWidth / 2
+//                    radius:         ScreenTools.defaultFontPixelWidth / 2
+                    radius:         ScreenTools.defaultFontPixelWidth - ScreenTools.defaultFontPixelWidth
                     fontPointSize:  ScreenTools.smallFontPointSize
                     autoExclusive:  true
 
