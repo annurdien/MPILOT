@@ -13,10 +13,10 @@
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    x="0px"
    y="0px"
-   viewBox="-250 452 80 72"
+   viewBox="-250 452 80 90"
    xml:space="preserve"
    width="80"
-   height="72"><metadata
+   height="90"><metadata
    id="metadata48"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>GPS</dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -262,7 +262,7 @@
 	<polygon
    id="polygon3927"
    class="st6"
-   points="-269.5,453.2 -269.5,494.2 -246.6,494.2 -246.6,453.2 -251.5,453.2 -251.5,446.7 -264.6,446.7 -264.6,453.2 " />
+   points="-269.5,494.2 -246.6,494.2 -246.6,453.2 -251.5,453.2 -251.5,446.7 -264.6,446.7 -264.6,453.2 -269.5,453.2 " />
 </g>
 <g
    style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
