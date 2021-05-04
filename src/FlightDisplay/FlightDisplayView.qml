@@ -561,15 +561,15 @@ Item {
             visible:            (activeVehicle ? activeVehicle.guidedModeSupported : true) && !QGroundControl.videoManager.fullScreen
             id:                 toolStrip
 
-            anchors.leftMargin: isInstrumentRight() ? _toolsMargin : undefined
-            anchors.left:       isInstrumentRight() ? _mapAndVideo.left : undefined
+//            anchors.leftMargin: isInstrumentRight() ? _toolsMargin : undefined
+//            anchors.left:       isInstrumentRight() ? _mapAndVideo.left : undefined
             anchors.rightMargin:isInstrumentRight() ? undefined : ScreenTools.defaultFontPixelWidth
             anchors.right:      isInstrumentRight() ? undefined : _mapAndVideo.right
             anchors.topMargin:  _toolsMargin
             anchors.top:        parent.top
             z:                  _mapAndVideo.z + 4
             maxHeight:          parent.height - toolStrip.y + (_flightVideo.visible ? (_flightVideo.y - parent.height) : 0)
-            title:              qsTr("Flight")
+            //title:              qsTr("Flight")
 
             property bool _anyActionAvailable: _guidedController.showStartMission || _guidedController.showResumeMission || _guidedController.showChangeAlt || _guidedController.showLandAbort
             property var _actionModel: [
