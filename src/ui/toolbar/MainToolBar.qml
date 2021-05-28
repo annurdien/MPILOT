@@ -261,6 +261,8 @@ Item {
 
     //-------------------------------------------------------------------------
     //-- Branding Logo
+
+    /**
     Image {
         anchors.right:          parent.right
         anchors.top:            parent.top
@@ -294,7 +296,7 @@ Item {
                                                         )
                                                     )
     }
-
+*/
     // Small parameter download progress bar
     Rectangle {
         anchors.bottom: parent.bottom
