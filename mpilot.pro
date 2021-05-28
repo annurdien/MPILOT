@@ -25,7 +25,7 @@ message(Qt version $$[QT_VERSION])
 
 include(QGCCommon.pri)
 
-TARGET   = MPilot
+TARGET   = M-Pilot
 TEMPLATE = app
 QGCROOT  = $$PWD
 
@@ -61,11 +61,11 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "MPilot"
-QGC_ORG_NAME        = "InderajaTeknik"
-QGC_ORG_DOMAIN      = "org.inderajateknik"
-QGC_APP_DESCRIPTION = "Open source MPilot app provided by MPilot dev team"
-QGC_APP_COPYRIGHT   = "Copyright (C) 2019 MPilot Development Team. All rights reserved."
+QGC_APP_NAME        = "M-Pilot"
+QGC_ORG_NAME        = "M-Pilot"
+QGC_ORG_DOMAIN      = "org.m-pilot"
+QGC_APP_DESCRIPTION = "Open source M-Pilot app provided by M-Pilot dev team"
+QGC_APP_COPYRIGHT   = "Copyright (C) 2019 M-Pilot Development Team. All rights reserved."
 
 WindowsBuild {
     QGC_INSTALLER_ICON          = "WindowsMpilot.ico"
@@ -351,9 +351,9 @@ CustomBuild {
         RESOURCES += $$PWD/qgcimages.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"Mpilot\\\"\"
-    DEFINES += QGC_ORG_NAME=\"\\\"InderajaTeknik\\\"\"
-    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.InderajaTeknik\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"M-Pilot\\\"\"
+    DEFINES += QGC_ORG_NAME=\"\\\"M-Pilot\\\"\"
+    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.m-pilot\\\"\"
     RESOURCES += \
         $$PWD/qgroundcontrol.qrc \
         $$PWD/qgcresources.qrc \
