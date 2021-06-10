@@ -26,6 +26,7 @@ Item {
 
     property bool showIndicator: true
 
+    // New Features M-Pilot
     function getBatteryColor() {
         if(activeVehicle) {
             if(activeVehicle.battery.percentRemaining.value > 75) {
@@ -37,22 +38,28 @@ Item {
             if(activeVehicle.battery.percentRemaining.value > 0.1) {
                 return qgcPal.colorRed
             }
+
         }
         return qgcPal.colorGrey
     }
 
     function getBatteryPercentageText() {
-        if(activeVehicle) {
-            if(activeVehicle.battery.percentRemaining.value > 98.9) {
-                return "100%"
-            }
-            if(activeVehicle.battery.percentRemaining.value > 0.1) {
-                return activeVehicle.battery.percentRemaining.valueString + activeVehicle.battery.percentRemaining.units
-            }
-            if(activeVehicle.battery.voltage.value >= 0) {
-                return activeVehicle.battery.voltage.valueString + activeVehicle.battery.voltage.units
+//        if(activeVehicle) {
+//            if(activeVehicle.battery.percentRemaining.value > 98.9) {
+//                return "100%"
+//            } else {
+//                return activeVehicle.battery.percentRemaining.valueString + activeVehicle.battery.percentRemaining.units
+//            }
+//        }
+
+        //VoltageView
+
+        if(activeVehicle){
+            if(activeVehicle && activeVehicle.battery.voltage.value !== -1){
+                return activeVehicle.battery.voltage.valueString + " " + activeVehicle.battery.voltage.units
             }
         }
+
         return "N/A"
     }
 
